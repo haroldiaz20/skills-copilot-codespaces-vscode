@@ -1,3 +1,9 @@
-function skillMembers() {
-    return this.members.filter(member => member.skills.length > 0);
+function skillsMembers() {
+    return {
+        restrict: 'E',
+        scope: {
+            member: '='
+        },
+        templateUrl: 'skills-members.html'
+    };
 }
